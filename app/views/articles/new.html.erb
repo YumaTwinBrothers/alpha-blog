@@ -1,0 +1,17 @@
+<h1>Create an article</h1>
+
+<%= form_for @article do |f| %>
+  <p>
+    <%= f.label :title %><br />
+    <% #right of ":", possible to put any of word %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+    <% ##right of ":", possible to choose in two of "text_field" or "text_area" depending on the number %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p> 
+<% end %>
